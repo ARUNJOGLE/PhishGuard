@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PhishGuard - Phishing Website Detection</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="sticky-header">
+      <h1>PhishGuard❇️</h1>
+    </header>
+    <div class="theme-toggle">
+      <label class="switch">
+        <input type="checkbox" id="themeToggle" onclick="toggleTheme()" />
+        <span class="slider round">🌛</span>
+      </label>
+    </div>
+    <div class="container">
+      <input type="text" id="urlInput" placeholder="Enter URL" />
+      <button onclick="checkUrl()">Check</button>
+      <div id="loader" class="loader"></div>
+      <p id="result"></p>
+    </div>
+
+    <footer class="sticky-footer">
+      <p>&copy; 2024 PhishGuard❇️. All rights reserved.</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
